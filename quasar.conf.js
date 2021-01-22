@@ -6,7 +6,7 @@
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
-const timeStamp = new Date().getTime()
+
 module.exports = function (/* ctx */) {
   return {
     // https://quasar.dev/quasar-cli/supporting-ts
@@ -60,19 +60,11 @@ module.exports = function (/* ctx */) {
         '@kangc'
       ],
 
-      output: {
-        filename: `js/[name].${timeStamp}.js`,
-        chunkFilename: `js/[name].${timeStamp}.js`
-      },
-
       // rtl: false, // https://quasar.dev/options/rtl-support
       // preloadChunks: true,
       showProgress: false,
       gzip: true,
       analyze: true,
-
-      // 关闭 sourcemap
-      productionSourceMap: false,
 
       // Options below are automatically set depending on the env, set them if you want to override
       // extractCSS: false,
