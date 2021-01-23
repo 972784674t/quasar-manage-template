@@ -4,7 +4,7 @@
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
     <img src="https://img.shields.io/badge/vue-2.6.12-brightgreen.svg" alt="vue">
-  <img src="https://img.shields.io/npm/v/quasar.svg?label=quasar">  <img src="https://img.shields.io/npm/v/%40quasar/extras.svg?label=@quasar/extras"> 
+  <img src="https://img.shields.io/npm/v/quasar.svg?label=quasar">  <img src="https://img.shields.io/npm/v/%40quasar/extras.svg?label=@quasar/extras">
 </p>
 
 Quasar-Manage 是一款中后台前端解决方案：
@@ -16,10 +16,12 @@ Quasar-Manage 是一款中后台前端解决方案：
 - 简单的代码逻辑，多种自定义组件，高度可定制性（只有 1600 行代码）
 - 完全开源及免费
 
+当然如果你想使用基于```vue-cli```版本的：[Vue-Quasar-Manage](https://github.com/972784674t/quasar-manage)
+
 使用这个项目前您需要了解如下技术栈：
 
 [ES6](https://es6.ruanyifeng.com/) | [Node.js](https://nodejs.org/en/) | [webpack](https://www.webpackjs.com/) | [vue](https://cn.vuejs.org/) | [vuex](https://vuex.vuejs.org/zh/) | [vue-router](https://router.vuejs.org/zh/) | [vuex](https://vuex.vuejs.org/zh/) | [quasar-cli](http://www.quasarchs.com/start/quasar-cli) | [axios](http://www.axios-js.com/) | [ESlint](https://eslint.bootcss.com/) | [Electron：如果需要](https://www.electronjs.org/)
-### DEMO地址 
+### DEMO地址
 
 [Github](https://972784674t.github.io/quasar-manage/) | [Gitee 国内用户访问](http://incimo.gitee.io/quasar-manage)
 
