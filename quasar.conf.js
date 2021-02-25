@@ -85,6 +85,15 @@ module.exports = function (/* ctx */) {
       https: false,
       port: 8888,
       open: true // opens browser window automatically
+      // proxy: {
+      //   '/api': {
+      //     target: 'your API address',
+      //     changeOrigin: true,
+      //     pathRewrite: {
+      //       '^/api': ''
+      //     }
+      //   }
+      // }
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
