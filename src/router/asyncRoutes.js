@@ -1,4 +1,4 @@
-import layout from '../components/Layout/layout'
+import Layout from '../components/Layout/Layout'
 
 /**
  * 需要授权访问的路由
@@ -16,6 +16,28 @@ const asyncRoutesChildren = [
     component: () => import('../pages/home/home.vue')
   },
   {
+    path: 'async-router',
+    name: 'asyncRouter',
+    meta: {
+      roles: ['admin', 'editor'],
+      title: '动态路由',
+      icon: 'all_inclusive',
+      itemLabel: 'ROUTER',
+      keepAlive: true
+    },
+    component: () => import('pages/router/asyncRouter')
+  },
+  {
+    path: 'async-router-impl',
+    name: 'asyncRouterImpl',
+    meta: {
+      roles: ['admin', 'editor'],
+      title: '动态路由实现思路',
+      keepAlive: true
+    },
+    component: () => import('pages/router/asyncRouterImpl')
+  },
+  {
     path: '/menu-1',
     name: 'menu-1',
     meta: {
@@ -25,7 +47,7 @@ const asyncRoutesChildren = [
       icon: 'library_music',
       isOpen: true
     },
-    component: layout,
+    component: Layout,
     children: [
       {
         path: 'menu-1-1',
@@ -35,7 +57,7 @@ const asyncRoutesChildren = [
           title: '模块 1 - 1',
           icon: 'filter_1'
         },
-        component: layout,
+        component: Layout,
         children: [
           {
             path: 'menu-1-1-1',
@@ -82,7 +104,7 @@ const asyncRoutesChildren = [
       icon: 'filter_3',
       isOpen: true
     },
-    component: layout,
+    component: Layout,
     children: [
       {
         path: 'menu3-1',
@@ -93,7 +115,7 @@ const asyncRoutesChildren = [
           icon: 'filter_2',
           isOpen: true
         },
-        component: layout,
+        component: Layout,
         children: [
           {
             path: 'menu3-1-1',
@@ -146,13 +168,10 @@ const asyncRoutes = [
     name: 'index',
     redirect: '/',
     component: () => import('../layouts/MainLayout'),
-    meta: {
-      // index routing does not participate in permission filtering,
-      // so there is no need to set permissions
-      // roles: ['admin', 'editor', 'test']
-    },
     children: asyncRoutesChildren
   }
 ]
 
 export default asyncRoutes
+
+export { asyncRoutesChildren }

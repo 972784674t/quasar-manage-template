@@ -1,0 +1,132 @@
+[{
+	"path": "/",
+	"name": "home",
+	"meta": {
+		"roles": [],
+		"title": "主页",
+		"icon": "home",
+		"keepAlive": true
+	},
+	"component": "home/home.vue"
+}, {
+	"path": "async-router",
+	"name": "asyncRouter",
+	"meta": {
+		"roles": [],
+		"title": "动态路由",
+		"icon": "all_inclusive",
+		"itemLabel": "ROUTER",
+		"keepAlive": true
+	},
+	"component": "router/asyncRouter.vue"
+}, {
+	"path": "async-router-impl",
+	"name": "asyncRouterImpl",
+	"meta": {
+		"roles": [],
+		"title": "动态路由实现思路",
+		"keepAlive": true
+	},
+	"component": "router/asyncRouterImpl.vue"
+}, {
+	"path": "/menu-1",
+	"name": "menu-1",
+	"meta": {
+		"roles": [],
+		"title": "模块 - 1",
+		"itemLabel": "SOME LABEL",
+		"icon": "library_music",
+		"isOpen": true
+	},
+	"component": "Layout",
+	"children": [{
+		"path": "menu-1-1",
+		"name": "menu-1-1",
+		"meta": {
+			"roles": [],
+			"title": "模块 1 - 1",
+			"icon": "filter_1"
+		},
+		"component": "Layout",
+		"children": [{
+			"path": "menu-1-1-1",
+			"name": "menu-1-1-1",
+			"meta": {
+				"roles": [],
+				"title": "模块 1 - 1 - 1",
+				"icon": "flaky",
+				"keepAlive": true
+			},
+			"component": "menu1/menu1.vue"
+		}]
+	}, {
+		"path": "menu-1-2",
+		"name": "menu-1-2",
+		"meta": {
+			"roles": [],
+			"title": "模块 1 - 2",
+			"icon": "filter_2",
+			"keepAlive": true
+		},
+		"component": "menu1/menu1-2.vue"
+	}]
+}, {
+	"path": "/menu-2",
+	"name": "menu-2",
+	"meta": {
+		"roles": [],
+		"title": "模块 2",
+		"icon": "extension"
+	},
+	"component": "menu2/menu-2-1.vue"
+}, {
+	"path": "/menu-3",
+	"name": "menu-3",
+	"meta": {
+		"roles": [],
+		"title": "模块 - 3",
+		"icon": "filter_3",
+		"isOpen": true
+	},
+	"component": "Layout",
+	"children": [{
+		"path": "menu3-1",
+		"name": "getting-started",
+		"meta": {
+			"roles": [],
+			"title": "模块 3 - 1",
+			"icon": "filter_2",
+			"isOpen": true
+		},
+		"component": "Layout",
+		"children": [{
+			"path": "menu3-1-1",
+			"name": "menu3-1-1",
+			"meta": {
+				"roles": [],
+				"title": "模块 3 - 1 - 1",
+				"icon": "filter_1",
+				"keepAlive": true
+			},
+			"component": "menu3/menu3.vue"
+		}]
+	}]
+}, {
+	"path": "http://www.quasarchs.com/vue-components/button",
+	"name": "external-link",
+	"meta": {
+		"roles": [],
+		"title": "外部链接/更多组件",
+		"icon": "send"
+	}
+}, {
+	"path": "/tableDetail",
+	"name": "tableDetail",
+	"meta": {
+		"roles": [],
+		"title": "Treats 详情",
+		"icon": "blur_linear",
+		"isHidden": true
+	},
+	"component": "home/tableDetail.vue"
+}]
