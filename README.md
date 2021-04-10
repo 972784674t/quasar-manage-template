@@ -31,6 +31,10 @@ Quasar-Manage 是一款中后台前端解决方案：
 ![electron](https://images.gitee.com/uploads/images/2021/0201/144237_25c67b18_5663937.png "elc.png")
 
 <p align="center">
+    <img src="https://images.gitee.com/uploads/images/2021/0410/165844_85bc70ef_5663937.png" alt="ios">
+</p>
+
+<p align="center">
     <img src="https://images.gitee.com/uploads/images/2021/0201/143433_c700edab_5663937.png" alt="android">
 </p>
 
@@ -78,6 +82,8 @@ async function handleKeepAlive (to) {
 - *2021/3/20*
   - 如果路由的 roles 没有被设置或为空，则所有用户均可访问
   - 添加了后端动态获取路由的 DEMO，并提供了实现思路作为学习交流
+- *2021/4/10*
+  - 将 quasar 版本降低为 1.15.1 ，修复 ios 端 input 重复输入的问题
 
 ### Electron
 之后 Electron 版本的更新将在 Electron 分支进行，感谢 [CloudWoR](https://github.com/CloudWoR) 提供的支持
